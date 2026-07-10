@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-God Eater Resurrection - SECURE.BIN encrypt/decrypt tool
+God Eater Resurrection - SECURE.BIN encrypt/decrypt tool and reigon porter
 ==========================================================
 
 DISCLAIMER: Generative AI was used to assist in the RE process and the writing this tool.
@@ -13,23 +13,23 @@ The algorithm and key-derivation formula below have been verified against real s
 USAGE
 -----
   Decrypt (key is read automatically from the file's own trailer):
-      python3 ger_save_crypto.py decrypt SECURE.BIN output.bin
+      python3 GERSaveCryptTool.py decrypt SECURE.BIN output.bin
 
   Encrypt (key is derived automatically from RtcHash at offset 0x40):
-      python3 ger_save_crypto.py encrypt plain.bin SECURE_new.BIN
+      python3 GERSaveCryptTool.py encrypt plain.bin SECURE_new.BIN
 
   Encrypt and auto-fix checksums after editing fields:
-      python3 ger_save_crypto.py encrypt plain.bin SECURE_new.BIN --fix-checksums
+      python3 GERSaveCryptTool.py encrypt plain.bin SECURE_new.BIN --fix-checksums
 
   Inspect / fix checksums on a plaintext file without encrypting:
-      python3 ger_save_crypto.py checksums plain.bin
-      python3 ger_save_crypto.py checksums plain.bin --fix plain_fixed.bin
+      python3 GERSaveCryptTool.py checksums plain.bin
+      python3 GERSaveCryptTool.py checksums plain.bin --fix plain_fixed.bin
 
   Inspect known fields in a plaintext file:
-      python3 ger_save_crypto.py info plain.bin
+      python3 GERSaveCryptTool.py info plain.bin
       
   Port Region (-to dictates arrival, pick the one OPPOSITE of your save, JP or ENG.)
-      python3 ger_save_crypto.py -to JP SECURE.BIN output.bin
+      python3 GERSaveCryptTool.py -to JP SECURE.BIN output.bin
 """
 
 import sys
