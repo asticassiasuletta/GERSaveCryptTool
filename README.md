@@ -49,3 +49,7 @@ save file without a debugger or live capture
 
   Inspect known fields in a plaintext file:  
       ```python3 ger_save_crypto.py info plain.bin```
+        
+  Port Region (-to dictates arrival, pick the one OPPOSITE of your save, jp or global. Case-sensitive.)  
+      ```python3 ger_save_crypto.py port-region --to jp SECURE.BIN output.bin```
+      
