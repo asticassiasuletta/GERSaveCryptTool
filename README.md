@@ -2,8 +2,7 @@
 # God Eater Resurrection - SECURE.BIN encrypt/decrypt tool and region porter
 
 
-## DISCLAIMER: Generative AI was used to assist in the RE process and the writing this tool.
-## It is, regardless, fully functional. I, Suletta, take full responsibility for any errors in the code.
+## DISCLAIMER: Generative AI was used to assist in the RE process and the writing this tool. It is, regardless, fully functional. I, Suletta, take full responsibility for any errors in the code.
 
 Reverse-engineered from GER.exe (source file: src\\lib\\denc.c).
 The algorithm and key-derivation formula below have been verified against real save data. 
